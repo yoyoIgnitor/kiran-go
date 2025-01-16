@@ -1,3 +1,12 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabledManagers": ["gomod"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["github.com/yoyoIgnitor/go-modules/module1"],
+      "matchDatasources": ["git-tags"],
+      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$",
+      "versioning": "semver"
+    } 
+  ]
 }
