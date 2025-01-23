@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as base
+FROM ubuntu:24.04 as base
 
 WORKDIR /install
 
@@ -8,4 +8,4 @@ RUN apt-get update && \
 RUN add-apt-repository ppa:kalon33/gamesgiroll -y
 
 
-FROM ubuntu:18.04 as one
+FROM ubuntu:24.04 as one
